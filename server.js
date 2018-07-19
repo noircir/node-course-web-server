@@ -59,6 +59,13 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/project', (req, res) => {
+	res.render('project.hbs', {
+		pageTitle: 'Portfolio',
+		pageHeading: 'Portfolio page'
+	});
+});
+
 app.get('/bad', (req, res) => {
 	// res.send('Whatever you are looking for does not exist :(');
 	res.send({
